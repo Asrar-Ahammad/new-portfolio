@@ -2,6 +2,8 @@ import {
   CursorText,
   FilmReel,
   GithubLogo,
+  Student,
+  TrafficSign,
 } from "@phosphor-icons/react";
 
 const projects = [
@@ -9,18 +11,28 @@ const projects = [
     icon: <CursorText className="h-[30px] w-[30px]" />,
     title: "Text Guardian - AI Generated Text Detector",
     description: `This Flask-based web application allows users to classify text as either AI-generated or human-written. The application currently supports English and Hindi languages, with plans to add support for Tamil and more languages.`,
-    link: "/",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnXfZO3obE15TS3kuUeF7pv6XkNSOVJeihyQ&s",
+    link: "https://github.com/Asrar-Ahammad/text-classification",
   },
   {
     icon: <FilmReel className="h-[30px] w-[30px]" />,
     title: "Movie Recommendation System",
     description:
       "This movie recommendation system uses ML and cosine similarity to suggest related films based on user queries, employing NLP for insightful data analysis.",
-    link: "/",
-    imageUrl:
-      "https://img.freepik.com/free-photo/homepage-seen-computer-screen_23-2149416723.jpg?semt=ais_hybrid&w=740",
+    link: "https://github.com/Asrar-Ahammad/movie-recommendation-system",
+  },
+  {
+    icon: <Student className="h-[30px] w-[30px]" />,
+    title: "Student Performance Prediction",
+    description:
+      "The Student Performance Analysis System is a machine learning-based solution that analyzes student performance using various features. It leverages a CI/CD pipeline and is yet to deployed on Streamlit for automated development, testing, and deployment.",
+    link: "https://github.com/Asrar-Ahammad/Student-Performance-Prediction",
+  },
+  {
+    icon: <TrafficSign className="h-[30px] w-[30px]" />,
+    title: "Traffic Sign Detection",
+    description:
+      "This project employs the YOLOv5 algorithm to train a specialized model capable of accurately detecting traffic signs. The objective is to enhance road safety and optimize traffic management through efficient and reliable traffic sign recognition.",
+    link: "https://github.com/Asrar-Ahammad/Traffic-Sign-detection",
   },
   
 ];
@@ -42,7 +54,7 @@ const Projects = () => {
               <p className="w-full md:w-[70%] text-gray-600 bg-clip-padding backdrop-filter backdrop-blur-xs bg-opacity-0 rounded-lg">
                 {project.description}
               </p>
-              <a className="border-[1px] border-black text-black p-2 rounded-full w-fit flex items-center justify-center gap-2 cursor-pointer px-4 transition-all duration-300 hover:bg-black hover:text-white">
+              <a href={project.link} className="border-[1px] border-black text-black p-2 rounded-full w-fit flex items-center justify-center gap-2 cursor-pointer px-4 transition-all duration-300 hover:bg-black hover:text-white">
                 <GithubLogo /> Github
               </a>
             </div>
