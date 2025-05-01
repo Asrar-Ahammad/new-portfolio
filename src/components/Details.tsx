@@ -3,6 +3,7 @@ import Connect from "./Connect";
 import Tech from "./Tech";
 import Experience from "./Experience";
 import Projects from "./Projects";
+import { InView } from "./ui/in-view";
 
 function Details() {
   return (
@@ -42,10 +43,39 @@ function Details() {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="about" className="mt-8">
-            <h2 className="text-xl font-semibold">Turning real-world problems into intelligent solutions with AI, Machine Learning, and Full-Stack Development.</h2>
-            <p className="mt-2 text-gray-600 w-full">
-            I’m passionate about Artificial Intelligence, Machine Learning, and Data Science, with a strong focus on building solutions that solve real-world problems. I bring a well-rounded skill set that includes software development, full-stack web development, UI design, and a deep understanding of Data Structures and Algorithms. Whether working independently or as part of a team, I’m committed to delivering impactful, efficient, and user-focused solutions.
-            </p>
+            <InView
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  y: 30,
+                  scale: 0.95,
+                  filter: "blur(4px)",
+                },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  scale: 1,
+                  filter: "blur(0px)",
+                },
+              }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              viewOptions={{ margin: "0px 0px -100px 0px" }}
+            >
+              <h2 className="text-xl font-semibold">
+                Turning real-world problems into intelligent solutions with AI,
+                Machine Learning, and Full-Stack Development.
+              </h2>
+              <p className="mt-2 text-gray-600 w-full">
+                I’m passionate about Artificial Intelligence, Machine Learning,
+                and Data Science, with a strong focus on building solutions that
+                solve real-world problems. I bring a well-rounded skill set that
+                includes software development, full-stack web development, UI
+                design, and a deep understanding of Data Structures and
+                Algorithms. Whether working independently or as part of a team,
+                I’m committed to delivering impactful, efficient, and
+                user-focused solutions.
+              </p>
+            </InView>
           </TabsContent>
           <TabsContent value="projects" className="mt-8">
             <Projects />
