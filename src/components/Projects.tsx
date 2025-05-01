@@ -5,6 +5,7 @@ import {
   Student,
   TrafficSign,
 } from "@phosphor-icons/react";
+import { InView } from "./ui/in-view";
 
 const projects = [
   {
@@ -34,7 +35,6 @@ const projects = [
       "This project employs the YOLOv5 algorithm to train a specialized model capable of accurately detecting traffic signs. The objective is to enhance road safety and optimize traffic management through efficient and reliable traffic sign recognition.",
     link: "https://github.com/Asrar-Ahammad/Traffic-Sign-detection",
   },
-  
 ];
 
 const Projects = () => {
@@ -42,24 +42,45 @@ const Projects = () => {
     <>
       <div className="flex flex-col items-center justify-center gap-4 px-2 md:p-0 mb-4">
         {projects.map((project) => (
-          <div
-            className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300  
-              p-4 md:p-6 rounded-lg w-full h-fit group relative"
+          <InView
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: 30,
+                scale: 0.95,
+                filter: "blur(4px)",
+              },
+              visible: {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                filter: "blur(0px)",
+              },
+            }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            viewOptions={{ margin: "0px 0px -250px 0px" }}
           >
-            <div className="flex flex-col justify-start gap-4">
-              <div className="p-2 border-2 border-white shadow-lg w-fit rounded-lg">
-                {project.icon}
+            <div
+              className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300  
+              p-4 md:p-6 rounded-lg w-full h-fit group relative"
+            >
+              <div className="flex flex-col justify-start gap-4">
+                <div className="p-2 border-2 border-white shadow-lg w-fit rounded-lg">
+                  {project.icon}
+                </div>
+                <h3 className="font-semibold text-xl">{project.title}</h3>
+                <p className="w-full md:w-[70%] text-gray-600 bg-clip-padding backdrop-filter backdrop-blur-xs bg-opacity-0 rounded-lg">
+                  {project.description}
+                </p>
+                <a
+                  href={project.link}
+                  className="border-[1px] border-black text-black p-2 rounded-full w-fit flex items-center justify-center gap-2 cursor-pointer px-4 transition-all duration-300 hover:bg-black hover:text-white"
+                >
+                  <GithubLogo /> Github
+                </a>
               </div>
-              <h3 className="font-semibold text-xl">{project.title}</h3>
-              <p className="w-full md:w-[70%] text-gray-600 bg-clip-padding backdrop-filter backdrop-blur-xs bg-opacity-0 rounded-lg">
-                {project.description}
-              </p>
-              <a href={project.link} className="border-[1px] border-black text-black p-2 rounded-full w-fit flex items-center justify-center gap-2 cursor-pointer px-4 transition-all duration-300 hover:bg-black hover:text-white">
-                <GithubLogo /> Github
-              </a>
             </div>
-            <div className="absolute w-[100px] h-[100px] bg-black -top-10 -right-10 rounded-full blur-lg group-hover:blur-2xl group-hover:scale-[1.5] transition-all duration-500"></div>
-          </div>
+          </InView>
         ))}
       </div>
     </>

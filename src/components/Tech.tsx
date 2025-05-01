@@ -1,4 +1,5 @@
 import { ArrowUpRight, ArticleNyTimes, Brain } from "@phosphor-icons/react";
+import { InView } from "./ui/in-view";
 
 const techs = [
   {
@@ -127,19 +128,41 @@ const Tech = () => {
   return (
     <>
       <div className="flex items-center justify-center flex-wrap gap-4 mb-8">
-        {techs.map((tech) => (
-          <a
-            href={tech.link}
-            className="w-[220px] h-[120px] flex items-center justify-center gap-2 border-[1px] border-gray-200 rounded-lg hover:border-gray-600 cursor-pointer group relative transition-all duration-500"
+        {techs.map((tech, index) => (
+          <InView
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: 30,
+                scale: 0.95,
+                filter: "blur(4px)",
+              },
+              visible: {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                filter: "blur(0px)",
+              },
+            }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            viewOptions={{ margin: "0px 0px -100px 0px" }}
           >
-            <div className="rounded-lg group-hover:shadow-lg transition-all duration-500">
-              {tech.icon}
-            </div>
-            <p className="font-semibold text-lg">{tech.title}</p>
-            <div className="absolute hidden group-hover:block group-hover:top-2 group-hover:right-4">
-              <ArrowUpRight className="w-[15px] h-[15px] transition-all duration-500" />
-            </div>
-          </a>
+            <a
+              href={tech.link}
+              className="w-[220px] h-[120px] flex items-center justify-center gap-2 border-[1px] border-gray-200 rounded-lg cursor-pointer group relative transition-all duration-500"
+              key={index}
+            >
+              <div className="flex flex-col items-center justify-center md:flex-row gap-2">
+                <div className="rounded-lg group-hover:shadow-lg transition-all duration-500">
+                  {tech.icon}
+                </div>
+                <p className="font-semibold text-lg">{tech.title}</p>
+              </div>
+              <div className="absolute hidden group-hover:block group-hover:top-2 group-hover:right-4">
+                <ArrowUpRight className="w-[15px] h-[15px] transition-all duration-500" />
+              </div>
+            </a>
+          </InView>
         ))}
       </div>
     </>

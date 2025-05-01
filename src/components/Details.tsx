@@ -7,7 +7,7 @@ import Projects from "./Projects";
 function Details() {
   return (
     <>
-      <div className="w-full h-full flex items-center justify-start mt-16 md:mt-8">
+      <div className="w-full h-full flex items-center justify-start mt-16 md:mt-8 mb-10">
         <Tabs defaultValue="about" className="w-fit md:w-[60vw]">
           <TabsList className="flex item-center justify-center gap-2 md:gap-4 bg-transparent transition-all duration-500">
             <TabsTrigger
@@ -42,13 +42,9 @@ function Details() {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="about" className="mt-8">
-            <h2 className="text-3xl font-semibold">About Me</h2>
+            <h2 className="text-xl font-semibold">Turning real-world problems into intelligent solutions with AI, Machine Learning, and Full-Stack Development.</h2>
             <p className="mt-2 text-gray-600 w-full">
-              Passionate about AI, Machine Learning, and Data Science, with a
-              focus on solving real-world problems. Skilled in software
-              development, UI design, Machine Learning, Data Science, Full Stack
-              Development, and Data Structures and Algorithms. Effective
-              independently and in teams.
+            I’m passionate about Artificial Intelligence, Machine Learning, and Data Science, with a strong focus on building solutions that solve real-world problems. I bring a well-rounded skill set that includes software development, full-stack web development, UI design, and a deep understanding of Data Structures and Algorithms. Whether working independently or as part of a team, I’m committed to delivering impactful, efficient, and user-focused solutions.
             </p>
           </TabsContent>
           <TabsContent value="projects" className="mt-8">
