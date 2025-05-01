@@ -3,7 +3,7 @@ import { TextEffect } from "@/components/motion-primitives/text-effect";
 const social_links = [
   {
     title: "Linkedin",
-    link: "linkedin.com/in/shaik-mohammad-asrar-ahammad",
+    link: "https://www.linkedin.com/in/shaik-mohammad-asrar-ahammad",
     username: "@shaik-mohammad-asrar-ahammad",
     delay: 0,
   },
