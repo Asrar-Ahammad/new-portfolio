@@ -7,8 +7,8 @@ import Projects from "./Projects";
 function Details() {
   return (
     <>
-      <div className="w-full h-full flex items-center justify-start mt-6">
-        <Tabs defaultValue="about" className="w-full md:w-[60vw]">
+      <div className="w-full h-full flex items-center justify-start mt-16 md:mt-8">
+        <Tabs defaultValue="about" className="w-fit md:w-[60vw]">
           <TabsList className="flex item-center justify-center gap-2 md:gap-4 bg-transparent transition-all duration-500">
             <TabsTrigger
               className="cursor-pointer text-gray-400 data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
