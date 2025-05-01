@@ -6,6 +6,7 @@ import {
   TrafficSign,
 } from "@phosphor-icons/react";
 import { InView } from "./ui/in-view";
+import { BorderTrail } from "./ui/border-trail";
 
 const projects = [
   {
@@ -58,12 +59,19 @@ const Projects = () => {
               },
             }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            viewOptions={{ margin: "0px 0px -250px 0px" }}
+            viewOptions={{ margin: "0px 0px -100px 0px" }}
           >
             <div
               className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300  
               p-4 md:p-6 rounded-lg w-full h-fit group relative"
             >
+              <BorderTrail
+                style={{
+                  boxShadow:
+                    "0px 0px 60px 30px rgb(200 200 200 / 50%), 0 0 100px 60px rgb(0 0 0 / 50%), 0 0 140px 90px rgb(0 0 0 / 50%)",
+                }}
+                size={100}
+              />
               <div className="flex flex-col justify-start gap-4">
                 <div className="p-2 border-2 border-white shadow-lg w-fit rounded-lg">
                   {project.icon}

@@ -147,21 +147,22 @@ const Tech = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             viewOptions={{ margin: "0px 0px -100px 0px" }}
           >
-            <a
-              href={tech.link}
-              className="w-[220px] h-[120px] flex items-center justify-center gap-2 border-[1px] border-gray-200 rounded-lg cursor-pointer group relative transition-all duration-500"
-              key={index}
-            >
-              <div className="flex flex-col items-center justify-center md:flex-row gap-2">
-                <div className="rounded-lg group-hover:shadow-lg transition-all duration-500">
-                  {tech.icon}
+          
+              <a
+                href={tech.link}
+                className="w-[220px] h-[120px] flex items-center justify-center gap-2 border-[1px] border-gray-200 rounded-lg cursor-pointer group relative transition-all duration-500"
+                key={index}
+              >
+                <div className="flex flex-col items-center justify-center md:flex-row gap-2">
+                  <div className="rounded-lg group-hover:shadow-lg transition-all duration-500">
+                    {tech.icon}
+                  </div>
+                  <p className="font-semibold text-lg">{tech.title}</p>
                 </div>
-                <p className="font-semibold text-lg">{tech.title}</p>
-              </div>
-              <div className="absolute hidden group-hover:block group-hover:top-2 group-hover:right-4">
-                <ArrowUpRight className="w-[15px] h-[15px] transition-all duration-500" />
-              </div>
-            </a>
+                <div className="absolute hidden group-hover:block group-hover:top-2 group-hover:right-4">
+                  <ArrowUpRight className="w-[15px] h-[15px] transition-all duration-500" />
+                </div>
+              </a>
           </InView>
         ))}
       </div>
