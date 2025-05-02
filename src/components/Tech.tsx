@@ -145,7 +145,7 @@ const Tech = () => {
               },
             }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            viewOptions={{ margin: "0px 0px -100px 0px" }}
+            viewOptions={{ margin: "0px 0px 0px 0px" }}
           >
           
               <a

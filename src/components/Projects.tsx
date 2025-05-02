@@ -59,7 +59,7 @@ const Projects = () => {
               },
             }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            viewOptions={{ margin: "0px 0px -100px 0px" }}
+            viewOptions={{ margin: "0px 0px -50px 0px" }}
           >
             <div
               className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300  
