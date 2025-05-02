@@ -154,10 +154,10 @@ const Tech = () => {
                 key={index}
               >
                 <div className="flex items-center justify-center gap-2">
-                  <div className="w-[20px] h-[20px]">
+                  <div className="w-[20px] h-[20px] flex items-center justify-center">
                     {tech.icon}
                   </div>
-                  <p className="font-semibold text-sm">{tech.title}</p>
+                  <p className="font-semibold text-sm flex items-center justify-center">{tech.title}</p>
                 </div>
               </a>
           </InView>
