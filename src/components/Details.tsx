@@ -9,7 +9,7 @@ function Details() {
   return (
     <>
       <div className="w-full h-full flex items-center justify-start mt-16 md:mt-8 mb-10">
-        <Tabs defaultValue="about" className="w-fit md:w-[60vw]">
+        <Tabs defaultValue="about" className="w-full md:w-[60vw]">
           <TabsList className="flex item-center justify-center gap-2 md:gap-4 bg-transparent transition-all duration-500">
             <TabsTrigger
               className="cursor-pointer text-gray-400 data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
@@ -61,10 +61,10 @@ function Details() {
               transition={{ duration: 0.3, ease: "easeInOut" }}
               viewOptions={{ margin: "0px 0px -100px 0px" }}
             >
-              <h2 className="text-xl font-semibold">
+              <div className="text-xl font-medium">
                 Turning real-world problems into intelligent solutions with AI,
                 Machine Learning, and Full-Stack Development.
-              </h2>
+              </div>
               <p className="mt-2 text-gray-600 w-full">
                 I’m passionate about Artificial Intelligence, Machine Learning,
                 and Data Science, with a strong focus on building solutions that

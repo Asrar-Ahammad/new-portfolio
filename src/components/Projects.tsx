@@ -41,7 +41,7 @@ const projects = [
 const Projects = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-4 px-2 md:p-0 mb-4">
+      <div className="flex flex-col items-center justify-center gap-4 mb-4">
         {projects.map((project) => (
           <InView
             variants={{

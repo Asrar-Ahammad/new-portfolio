@@ -14,7 +14,7 @@ const App = () => {
         duration={400}
       >
         <main className="flex items-center justify-center w-full h-full relative">
-          <div className="w-[90vw] md:w-[700px] h-full">
+          <div className="w-full md:w-[700px] h-full px-4">
             <ProfileSection />
             <Details />
           </div>

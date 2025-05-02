@@ -1,4 +1,4 @@
-import { ArrowUpRight, ArticleNyTimes, Brain } from "@phosphor-icons/react";
+import { ArticleNyTimes, Brain } from "@phosphor-icons/react";
 import { InView } from "./ui/in-view";
 
 const techs = [
@@ -43,12 +43,12 @@ const techs = [
     link: "https://en.wikipedia.org/wiki/Machine_learning",
   },
   {
-    icon: <Brain weight="bold" className="w-[30px] h-[30px]" />,
+    icon: <Brain weight="bold" className="w-[20px] h-[20px]" />,
     title: "Deep Learning",
     link: "https://en.wikipedia.org/wiki/Deep_learning",
   },
   {
-    icon: <ArticleNyTimes weight="bold" className="w-[30px] h-[30px]" />,
+    icon: <ArticleNyTimes weight="bold" className="w-[20px] h-[20px]" />,
     title: "NLP",
     link: "https://en.wikipedia.org/wiki/Natural_language_processing",
   },
@@ -150,17 +150,14 @@ const Tech = () => {
           
               <a
                 href={tech.link}
-                className="w-[220px] h-[120px] flex items-center justify-center gap-2 border-[1px] border-gray-200 rounded-lg cursor-pointer group relative transition-all duration-500"
+                className="p-4 flex items-center justify-center gap-2 border-[1px] border-gray-200 rounded-lg cursor-pointer group relative transition-all duration-500 hover:bg-gray-200"
                 key={index}
               >
-                <div className="flex flex-col items-center justify-center md:flex-row gap-2">
-                  <div className="rounded-lg group-hover:shadow-lg transition-all duration-500">
+                <div className="flex items-center justify-center gap-2">
+                  <div className="w-[20px] h-[20px]">
                     {tech.icon}
                   </div>
-                  <p className="font-semibold text-lg">{tech.title}</p>
-                </div>
-                <div className="absolute hidden group-hover:block group-hover:top-2 group-hover:right-4">
-                  <ArrowUpRight className="w-[15px] h-[15px] transition-all duration-500" />
+                  <p className="font-semibold text-sm">{tech.title}</p>
                 </div>
               </a>
           </InView>
