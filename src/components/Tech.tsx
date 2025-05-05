@@ -1,6 +1,7 @@
 import { ArticleNyTimes, Brain } from "@phosphor-icons/react";
 import { InView } from "./ui/in-view";
 
+
 const techs = [
   {
     icon: <img src="python_icon.svg" className="w-[30px] h-[30px]" />,
@@ -123,6 +124,7 @@ const techs = [
     link: "https://github.com/",
   },
 ];
+
 
 const Tech = () => {
   return (

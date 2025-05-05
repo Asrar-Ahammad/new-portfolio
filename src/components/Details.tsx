@@ -10,38 +10,57 @@ function Details() {
     <>
       <div className="w-full h-full flex items-center justify-start mt-16 md:mt-8 mb-10">
         <Tabs defaultValue="about" className="w-full md:w-[60vw]">
-          <TabsList className="flex item-center justify-center gap-2 md:gap-4 bg-transparent transition-all duration-500">
-            <TabsTrigger
-              className="cursor-pointer text-gray-400 data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
-              value="about"
-            >
-              About
-            </TabsTrigger>
-            <TabsTrigger
-              className="cursor-pointer text-gray-400 data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
-              value="projects"
-            >
-              Projects
-            </TabsTrigger>
-            <TabsTrigger
-              className="cursor-pointer text-gray-400 data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
-              value="experience"
-            >
-              experience
-            </TabsTrigger>
-            <TabsTrigger
-              className="cursor-pointer text-gray-400 data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
-              value="tech stack"
-            >
-              tech stack
-            </TabsTrigger>
-            <TabsTrigger
-              className="cursor-pointer text-gray-400 data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
-              value="connect"
-            >
-              connect
-            </TabsTrigger>
-          </TabsList>
+          <InView
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: 30,
+                scale: 0.95,
+                filter: "blur(4px)",
+              },
+              visible: {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                filter: "blur(0px)",
+              },
+            }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            viewOptions={{ margin: "0px 0px -100px 0px" }}
+          >
+            <TabsList className="flex item-center justify-center gap-2 md:gap-4 bg-transparent transition-all duration-500">
+              <TabsTrigger
+                className="cursor-pointer text-gray-400 data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
+                value="about"
+              >
+                About
+              </TabsTrigger>
+              <TabsTrigger
+                className="cursor-pointer text-gray-400 data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
+                value="projects"
+              >
+                Projects
+              </TabsTrigger>
+              <TabsTrigger
+                className="cursor-pointer text-gray-400 data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
+                value="experience"
+              >
+                experience
+              </TabsTrigger>
+              <TabsTrigger
+                className="cursor-pointer text-gray-400 data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
+                value="tech stack"
+              >
+                tech stack
+              </TabsTrigger>
+              <TabsTrigger
+                className="cursor-pointer text-gray-400 data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
+                value="connect"
+              >
+                connect
+              </TabsTrigger>
+            </TabsList>
+          </InView>
           <TabsContent value="about" className="mt-8">
             <InView
               variants={{
