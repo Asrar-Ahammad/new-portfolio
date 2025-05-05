@@ -29,14 +29,14 @@ const Connect = () => {
         {social_links.map((item) => (
           <a
             href={item.link}
-            className="flex item-center justify-between gap-4 w-fit cursor-pointer rounded-lg hover:bg-gray-100 transition-all duration-500 p-4"
+            className="flex item-center justify-between gap-4 w-fit cursor-pointer rounded-lg hover:bg-gray-100 transition-all duration-500 p-4 group"
           >
             <TextEffect
               per="word"
               as="h3"
               preset="blur"
               delay={item.delay}
-              className="font-medium text-lg"
+              className="font-medium text-lg group-hover:dark:text-black"
             >
               {item.title}
             </TextEffect>

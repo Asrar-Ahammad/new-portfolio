@@ -5,7 +5,7 @@ import { TextEffect } from "@/components/motion-primitives/text-effect";
 const ProfileSection = () => {
   return (
     <>
-      <div className="profile h-[30vh] mt-[10vh] flex justify-center flex-col gap-6 md:py-16">
+      <div className="profile h-[30vh] mt-[10vh] flex justify-center flex-col gap-6 md:py-16 ">
         <Avatar />
         <div className="flex flex-col justify-center gap-4">
           <TextEffect

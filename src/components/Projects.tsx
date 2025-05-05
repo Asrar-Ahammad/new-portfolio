@@ -62,7 +62,7 @@ const Projects = () => {
             viewOptions={{ margin: "0px 0px -50px 0px" }}
           >
             <div
-              className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300  
+              className="overflow-hidden dark:shadow-slate-600 shadow-sm hover:shadow-lg transition-all duration-300  
               p-4 md:p-6 rounded-lg w-full h-fit group relative"
             >
               <BorderTrail
@@ -70,7 +70,7 @@ const Projects = () => {
                   boxShadow:
                     "0px 0px 60px 30px rgb(200 200 200 / 50%), 0 0 100px 60px rgb(0 0 0 / 50%), 0 0 140px 90px rgb(0 0 0 / 50%)",
                 }}
-                size={100}
+                size={200}
               />
               <div className="flex flex-col justify-start gap-4">
                 <div className="p-2 border-2 border-white shadow-lg w-fit rounded-lg">
@@ -82,9 +82,9 @@ const Projects = () => {
                 </p>
                 <a
                   href={project.link}
-                  className="border-[1px] border-black text-black p-2 rounded-full w-fit flex items-center justify-center gap-2 cursor-pointer px-4 transition-all duration-300 hover:bg-black hover:text-white"
+                  className="border-[1px] border-black text-black p-2 rounded-full w-fit flex items-center justify-center gap-2 cursor-pointer px-4 transition-all duration-300 hover:bg-black hover:text-white dark:border-white dark:text-white"
                 >
-                  <GithubLogo /> Github
+                  <GithubLogo weight="bold"/> Github
                 </a>
               </div>
             </div>

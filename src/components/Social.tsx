@@ -23,12 +23,12 @@ const social = [
     href: "https://github.com/Asrar-Ahammad",
   },
   {
-    logo: <img src="kaggle.svg" className="w-[19px] h-[19px]" />,
+    logo: <img src="kaggle.svg" className="w-[19px] h-[19px] dark:bg-white dark:rounded-[1px]" />,
     tooltip: "Kaggle",
     href: "https://www.kaggle.com/mohammadasrarahammad",
   },
   {
-    logo: <img src="leetcode.svg" className="w-[19px] h-[19px]" />,
+    logo: <img src="leetcode.svg" className="w-[19px] h-[19px] dark:bg-white dark:rounded-[1px]" />,
     tooltip: "Leetcode",
     href: "https://leetcode.com/u/Asrar-Ahammad/",
   },

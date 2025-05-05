@@ -152,11 +152,11 @@ const Tech = () => {
           
               <a
                 href={tech.link}
-                className="p-4 flex items-center justify-center gap-2 border-[1px] border-gray-200 rounded-lg cursor-pointer group relative transition-all duration-500 hover:bg-gray-200"
+                className="p-4 flex items-center justify-center gap-2 border-[1px] border-gray-200 rounded-lg cursor-pointer group relative transition-all duration-500 hover:bg-gray-200 dark:hover:bg-gray-700 dark:hover:text-white"
                 key={index}
               >
                 <div className="flex items-center justify-center gap-2">
-                  <div className="w-[20px] h-[20px] flex items-center justify-center">
+                  <div className="w-[20px] h-[20px] flex items-center justify-center dark:shadow-lg dark:shadow-slate-600 dark:bg-gray-700 dark:text-black rounded-lg ">
                     {tech.icon}
                   </div>
                   <p className="font-semibold text-sm flex items-center justify-center">{tech.title}</p>
