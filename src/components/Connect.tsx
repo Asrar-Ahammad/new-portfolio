@@ -36,7 +36,7 @@ const Connect = () => {
               as="h3"
               preset="blur"
               delay={item.delay}
-              className="font-medium text-lg group-hover:dark:text-black"
+              className="font-medium text-lg group-hover:dark:text-black transition-all duration-300"
             >
               {item.title}
             </TextEffect>

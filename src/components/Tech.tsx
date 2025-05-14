@@ -152,7 +152,7 @@ const Tech = () => {
           
               <a
                 href={tech.link}
-                className="p-4 flex items-center justify-center gap-2 border-[1px] border-gray-200 rounded-lg cursor-pointer group relative transition-all duration-500 hover:bg-gray-200 dark:hover:bg-gray-700 dark:hover:text-white"
+                className="p-4 flex items-center justify-center gap-2 border-[1px] border-gray-200 rounded-lg cursor-pointer group relative transition-all duration-500 hover:bg-gray-200 dark:hover:bg-black dark:hover:shadow-xs dark:shadow-white dark:hover:text-white "
                 key={index}
               >
                 <div className="flex items-center justify-center gap-2">

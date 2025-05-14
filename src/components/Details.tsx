@@ -30,31 +30,31 @@ function Details() {
           >
             <TabsList className="flex item-center justify-center gap-2 md:gap-4 bg-transparent transition-all duration-500">
               <TabsTrigger
-                className="cursor-pointer text-gray-400 dark:data-[state=active]:text-black data-[state=active]:text-white dark:data-[state=active]:bg-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
+                className="cursor-pointer text-gray-400 dark:data-[state=active]:text-black data-[state=active]:text-white dark:data-[state=active]:bg-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-300 rounded-full active:scale-80"
                 value="about"
               >
                 About
               </TabsTrigger>
               <TabsTrigger
-                className="cursor-pointer text-gray-400 dark:data-[state=active]:text-black dark:data-[state=active]:bg-white  data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
+                className="cursor-pointer text-gray-400 dark:data-[state=active]:text-black dark:data-[state=active]:bg-white  data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-300 rounded-full active:scale-80"
                 value="projects"
               >
                 Projects
               </TabsTrigger>
               <TabsTrigger
-                className="cursor-pointer text-gray-400 dark:data-[state=active]:text-black dark:data-[state=active]:bg-white  data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
+                className="cursor-pointer text-gray-400 dark:data-[state=active]:text-black dark:data-[state=active]:bg-white  data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-300 rounded-full active:scale-80"
                 value="experience"
               >
                 experience
               </TabsTrigger>
               <TabsTrigger
-                className="cursor-pointer text-gray-400 dark:data-[state=active]:text-black dark:data-[state=active]:bg-white  data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
+                className="cursor-pointer text-gray-400 dark:data-[state=active]:text-black dark:data-[state=active]:bg-white  data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-300 rounded-full active:scale-80"
                 value="tech stack"
               >
                 tech stack
               </TabsTrigger>
               <TabsTrigger
-                className="cursor-pointer text-gray-400 dark:data-[state=active]:text-black dark:data-[state=active]:bg-white  data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-500 rounded-full"
+                className="cursor-pointer text-gray-400 dark:data-[state=active]:text-black dark:data-[state=active]:bg-white  data-[state=active]:text-white data-[state=active]:bg-black data-[state=active]:font-medium capitalize font-light transition-all duration-300 rounded-full active:scale-80"
                 value="connect"
               >
                 connect

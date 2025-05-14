@@ -64,7 +64,7 @@ const Social = () => {
           <TooltipProvider delayDuration={0} key={index}>
             <Tooltip>
               <TooltipTrigger asChild>
-                <a href={item.href}>{item.logo}</a>
+                <a href={item.href} >{item.logo}</a>
               </TooltipTrigger>
               <TooltipContent
                 side="bottom"

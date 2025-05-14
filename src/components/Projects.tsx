@@ -82,7 +82,7 @@ const Projects = () => {
                 </p>
                 <a
                   href={project.link}
-                  className="border-[1px] border-black text-black p-2 rounded-full w-fit flex items-center justify-center gap-2 cursor-pointer px-4 transition-all duration-300 hover:bg-black hover:text-white dark:border-white dark:text-white"
+                  className="border-[1px] border-black text-black p-2 rounded-full w-fit flex items-center justify-center gap-2 cursor-pointer px-4 transition-all duration-300 hover:bg-black hover:text-white dark:border-white dark:text-white active:scale-90"
                 >
                   <GithubLogo weight="bold"/> Github
                 </a>
