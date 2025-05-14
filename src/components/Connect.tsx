@@ -5,20 +5,20 @@ const social_links = [
     title: "Linkedin",
     link: "https://www.linkedin.com/in/shaik-mohammad-asrar-ahammad",
     username: "@shaik-mohammad-asrar-ahammad",
-    delay: 0,
+    delay: 0.1,
   },
   {
     title: "Github",
     link: "https://github.com/Asrar-Ahammad",
     username: "@Asrar-Ahammad",
-    delay: 0.5,
+    delay: 0.1,
   },
 
   {
     title: "Mail",
     link: "mailto:asrarahammadshaik@gmail.com",
     username: "asrarahammadshaik@gmail.com",
-    delay: 1,
+    delay: 0.1,
   },
 ];
 
